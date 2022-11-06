@@ -9,48 +9,56 @@
 </head>
 <body>
     <div class="page">
-        <div class="header">
+        <header class="header">
             <h1 class="header-title">My first page</h1>
             <h2 class="header-subtitle">Добро пожаловать</h2>
-        </div>
+        </header>
 
-        <div class="nav">
+        <nav class="nav">
             <a class="nav-link" href="#">Главная</a>
             <a class="nav-link" href="#">Новости</a>
             <a class="nav-link" href="#">Галерея</a>
             <a class="nav-link" href="#">О нас</a>
-        </div>
-
-        <img src="img/space.jpg" width="800px" alt="">
+        </nav>
         
-        <div class="content">
-            <h3 class="content-title">О нас</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam, quaerat nihil iure minima quos sequi aliquam quo hic ab explicabo tempora molestias provident, laborum blanditiis quisquam minus sapiente. Blanditiis.</p>
-            <a class="content-link" href="#">Читать полность</a>
+        <div class="container">
 
-            <h3 class="content-title">Новости</h3>
-            <div class="article">
-                <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
-                <div class="article-date">06.04.2022</div>
-                <div class="article-text">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
-                </div>
-                <a class="content-link" href="#">Читать полность</a>
-            </div>
-            <div class="article">
-                <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
-                <div class="article-date">06.04.2022</div>
-                <div class="article-text">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
-                </div>
-                <a class="content-link" href="#">Читать полность</a>
-            </div>
+            <main class="content">
+
+                <img class="img intro-img" src="img/space.jpg" width="800px" alt="">
+
+                <h3 class="content-title">Новости</h3>
+                <article class="article">
+                    <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
+                    <time class="article-date" datetime="06-04-2022 19-22">Вчера в 19:22</time>
+                    <div class="article-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
+                    </div>
+                    <a class="content-link" href="#">Читать полность</a>
+                </article>
+
+                <article class="article">
+                    <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
+                    <time class="article-date" datetime="06-04-2022 22-30">Вчера в 22:30</time>
+                    <div class="article-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat aperiam sint consequuntur aliquam deleniti odio libero, enim nemo iusto, tempore debitis voluptate sequi ipsa facilis optio eligendi reiciendis. Cupiditate.</p>
+                    </div>
+                    <a class="content-link" href="#">Читать полность</a>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <h3 class="sidebar-title">О нас</h3>
+                <img class="img" src="img/man.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam, quaerat nihil iure minima quos sequi aliquam quo hic ab explicabo tempora molestias provident, laborum blanditiis quisquam minus sapiente. Blanditiis.</p>
+                <a class="sidebar-link" href="#">Читать полность</a>
+            </aside>
         </div>
-        <div class="footer">
+        <footer class="footer">
             <div class="footer-title">Копирайт</div>
-        </div>
+        </footer>
     </div>
 </body>
 </html>

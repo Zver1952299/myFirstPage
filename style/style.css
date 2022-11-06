@@ -6,11 +6,33 @@ body {
     margin: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .page {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 
     background-color: rgb(240, 240, 240);
+}
+
+.container {
+    display: flex;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.intro-img {
+    border-radius: 15px;
+    box-shadow: 0 3px 5px #000;
 }
 
 /*================== Header ===================*/
@@ -35,15 +57,18 @@ body {
 /*================== Nav ===================*/
 
 .nav {
+    display: block;
+    justify-content: center;
     text-align: center;
+    margin: 10px;
 }
 
 .nav-link {
-    display: inline-block;
     padding: 8px 4px;
 
     color: #0B0C10;
     text-decoration: none;
+    transition: background-color 0.4s linear;
 }
 
 .nav-link:hover {
@@ -55,6 +80,7 @@ body {
 
 .content {
     padding: 0 16px;
+    width: 800px;
 }
 
 .content p {
@@ -77,6 +103,25 @@ body {
     text-decoration: underline;
 }
 
+/*================== Sidebar ===================*/
+
+.sidebar {
+    width: 200px;
+    padding: 10px;
+
+    background-color: rgb(231, 231, 231);
+}
+
+.sidebar-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #e02525;
+}
+
+.sidebar img {
+    background: linear-gradient(to top, #fff, rgb(228, 228, 228));
+}
+
 /*================== Article ===================*/
 
 .article {
@@ -94,9 +139,11 @@ body {
 }
 
 .article-date {
-   font-size: 12px;
+    display: block;
 
-   margin-bottom: 16px;
+    font-size: 12px;
+
+    margin-bottom: 16px;
 
 }
 
